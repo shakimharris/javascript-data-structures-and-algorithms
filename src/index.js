@@ -30,3 +30,9 @@ for (var i = 0; i < word.length; i++) {
 for (var i = 0; i < word.length; i++) {
   secondword += letters.pop();
 }
+// now we use a if statement to see if our word is a palindrome
+if (word === secondword) {
+  console.log(word + "is a palindrome");
+} else {
+  console.log(word + "is not a palindrome");
+}
