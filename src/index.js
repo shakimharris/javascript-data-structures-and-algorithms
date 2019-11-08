@@ -14,8 +14,19 @@ document.getElementById("app").innerHTML = `
 
 // to create a stack, lets create an array
 
-var Stack = [];
+var letters = [];
 
 var word = "racecar";
 
 var secondword = "";
+
+// put letters of word into stack
+
+for (var i = 0; i < word.length; i++) {
+  letters.push(word[i]);
+}
+
+// pop off the word in reverse ordeer
+for (var i = 0; i < word.length; i++) {
+  secondword += letters.pop();
+}
