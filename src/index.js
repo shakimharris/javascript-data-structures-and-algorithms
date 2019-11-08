@@ -107,14 +107,12 @@ function mySet() {
     return collection.length;
   };
   // this function will return the combination of the two sets
-  this.union = function(otherSet){
-   var union = new Set(); 
-   var firstSet = this.values();
-   var secondSet = otherSet.values();
-   firstSet.forEach(function(e)){
-     if(otherSet.has(e)){
-       return 
-     }
-   }
-  }
+  this.union = function(otherSet) {
+    var union = new mySet();
+    var firstSet = this.values();
+    var secondSet = otherSet.values();
+    firstSet.forEach(function(e) {
+      unionSet.add(e);
+    });
+  };
 }
