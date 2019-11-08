@@ -16,7 +16,7 @@ document.getElementById("app").innerHTML = `
 
 var letters = [];
 
-var word = "racecar";
+var word = "rcar";
 
 var secondword = "";
 
@@ -36,3 +36,22 @@ if (word === secondword) {
 } else {
   console.log(word + "is not a palindrome");
 }
+//create stack as a function, a default way to count starting from zero, and a way to see storage state
+var Stack = function() {
+  this.count = 0;
+  this.storage = {};
+  // Now we want to add a value to the end of the stack
+  this.push = function(value) {
+    this.storage[this.count] = value;
+    this.count++;
+  };
+  this.pop = function() {
+    if (this.count === 0) {
+      return undefined;
+    }
+    this.count--;
+    var result = this.storage[this.count];
+    delete this.storage[this.count];
+    return result;
+  };
+};
