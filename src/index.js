@@ -8,4 +8,10 @@ document.getElementById("app").innerHTML = `
 </div>
 `;
 
+/* Stacks */
 
+// push, pop, peek, length (to determine how many elements are in a stack
+
+// to create a stack, lets create an array
+
+var Stack = [];
