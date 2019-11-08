@@ -57,4 +57,8 @@ var Stack = function() {
   this.size = function() {
     return this.count;
   };
+  // using peek function to return the alue at the end of the stack
+  this.peek = function() {
+    return this.storage[this.count - 1];
+  };
 };
