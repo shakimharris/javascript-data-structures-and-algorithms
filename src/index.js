@@ -114,5 +114,9 @@ function mySet() {
     firstSet.forEach(function(e) {
       unionSet.add(e);
     });
+    secondSet.forEach(function(e) {
+      unionSet.add(e);
+    });
+    return unionSet;
   };
 }
