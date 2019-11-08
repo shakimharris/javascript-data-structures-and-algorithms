@@ -15,3 +15,7 @@ document.getElementById("app").innerHTML = `
 // to create a stack, lets create an array
 
 var Stack = [];
+
+var word = "racecar";
+
+var secondword = "";
