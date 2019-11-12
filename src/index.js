@@ -162,3 +162,16 @@ setB.add("d");
 console.log(setA.subset(setB));
 console.log(setA.intersection(setB).values());
 console.log(setB.difference(setB).values());
+// lets work on Queues
+function Queue() {
+  var collection = [];
+  this.print = function() {
+    console.log(collection);
+  };
+  this.enqueue = function(element) {
+    collection.push(element);
+  };
+  this.dequeue = function() {
+    collection.shift(element);
+  };
+}
