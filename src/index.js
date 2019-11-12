@@ -73,3 +73,11 @@ find(data){
   }
   return current;
 }
+isPresent(data){
+  let current = current.data;
+  while (current){
+    if(current === current.data){
+      return true;
+    }
+  }
+}
