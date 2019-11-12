@@ -121,10 +121,14 @@ function mySet() {
   };
 
   // now we need a method to return the intersection of the two sets
-  this.intersection = function (otherSet) {
+  this.intersection = function(otherSet) {
     var intersectionSet = new Set();
     var firstSet = this.values();
-    firstSet.forEach(function(e) 
-    )
-    }
+    firstSet.forEach(function(e) {
+      if (otherSet.has(e)) {
+        intersectionSet.add(e);
+      }
+    });
+    return intersectionSet;
+  };
 }
