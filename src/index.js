@@ -131,4 +131,20 @@ function mySet() {
     });
     return intersectionSet;
   };
+  this.difference = function(otherSet) {
+    var differenceSet = new mySet();
+    var firstSet = this.values();
+    firstSet.forEach(function(e) {
+      if (!otherSet.has(e)) {
+        differentSet.add(e);
+      }
+    });
+    return differenceSet;
+  };
+  this.subset = function(otherSet) {
+    var subset = this.values();
+    return firstSet.every(function(value) {
+      return otherSet.has(value);
+    });
+  };
 }
