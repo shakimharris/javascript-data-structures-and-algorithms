@@ -46,3 +46,9 @@ class BST {
   }
 }
 }
+findMin (){
+  let current = this.root;
+  while (current.right !== null){
+    return current.data;
+  }
+}
