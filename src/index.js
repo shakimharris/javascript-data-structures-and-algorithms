@@ -148,3 +148,7 @@ function mySet() {
     });
   };
 }
+var setA = new mySet();
+var setB = new mySet();
+var setC = new mySet();
+var setD = new mySet();
