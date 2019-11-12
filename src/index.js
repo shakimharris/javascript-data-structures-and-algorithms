@@ -174,4 +174,13 @@ function Queue() {
   this.dequeue = function() {
     collection.shift(element);
   };
+  this.front = function() {
+    return collection[0];
+  };
+  this.size = function() {
+    return collection.length;
+  };
+  this.isEmpty = function() {
+    return collection.length === 0;
+  };
 }
