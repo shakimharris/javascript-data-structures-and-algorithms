@@ -143,7 +143,7 @@ function mySet() {
   };
   this.subset = function(otherSet) {
     var subset = this.values();
-    return firstSet.every(function(value) {
+    return subset.every(function(value) {
       return otherSet.has(value);
     });
   };
@@ -152,3 +152,13 @@ var setA = new mySet();
 var setB = new mySet();
 var setC = new mySet();
 var setD = new mySet();
+
+setA.add("a");
+setB.add("a");
+setB.add("b");
+setB.add("c");
+setB.add("d");
+
+console.log(setA.subset(setB));
+console.log(setA.intersection(setB).values());
+console.log(setB.difference(setB).values());
