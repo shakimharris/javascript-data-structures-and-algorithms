@@ -31,8 +31,17 @@ class BST {
        if (node.left === null) {
         node.left = new Node(data);
         return;
+       } else if (node.left !=== null){
+         return searchTree(node.left);
        }
+      } else if (node.right === null) {
+       node.right = new Node(data);
+      } else if (node.right !== null) {
+        return searchTree(node.right);
+      } else {
+        return null;
       }
+      return searchTree(node);
     }
   }
 }
