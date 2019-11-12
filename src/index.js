@@ -80,4 +80,27 @@ isPresent(data){
       return true;
     }
   }
+  if (data < current.data){
+    current = current.left;
+  } else 
+   current = current.right;
+}
+}
+return false;
+
+remove(data){
+  const removeNode = function(node, data){
+    if (node === null){
+      return null;
+    }
+    if (data == node.data){
+      //node has no children
+
+
+    }
+    if (node.right = null && node.left = null){
+      return null;
+    }
+  }
+
 }
