@@ -49,6 +49,17 @@ class BST {
 findMin (){
   let current = this.root;
   while (current.right !== null){
-    return current.data;
+    current = current.data;
   }
+  return current.data;
+}
+findMax() {
+  let current = this.root;
+  while (current.left !== null){
+    current = current.data;
+  }
+  return current.data;
+}
+find(data){
+  
 }
