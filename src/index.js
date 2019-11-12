@@ -172,7 +172,7 @@ function Queue() {
     collection.push(element);
   };
   this.dequeue = function() {
-    collection.shift(element);
+    collection.shift();
   };
   this.front = function() {
     return collection[0];
@@ -184,3 +184,12 @@ function Queue() {
     return collection.length === 0;
   };
 }
+
+var q = new Queue();
+q.enqueue("a");
+q.enqueue("b");
+q.enqueue("c");
+q.print();
+q.dequeue();
+q.front();
+q.print();
