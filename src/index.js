@@ -193,3 +193,12 @@ q.print();
 q.dequeue();
 q.front();
 q.print();
+
+// lets create a PriorityQueue now
+
+function PriorityQueue() {
+  var collection = [];
+  this.printCollection = function() {
+    console.log(collection());
+  };
+}
