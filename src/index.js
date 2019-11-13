@@ -32,6 +32,12 @@ let Hashtable = function () {
      ];
    } else {
      var inserted = false;
+     for(var i=0; i < storage[index].length; i++){
+       if(storage[index].length === key){
+         storage[index][i][1] = value; 
+         inserted = true;
+       }
+     }
    }
   }
 }
