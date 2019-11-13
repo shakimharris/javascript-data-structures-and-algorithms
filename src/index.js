@@ -16,3 +16,22 @@ var hash = (string, max) => {
   }
   return hash % max;
 };
+
+let Hashtable = function () {
+  let storage = [];
+  const StorageLimit = 4;
+  this.print = function(){
+    console.log(storage);
+  }
+
+  this.add = function(key, value) {
+   var index = hash(key, storageLimit);
+   if(storage[index] === undefined){
+     storage[index] = [
+       key, value ]
+     ];
+   } else {
+     var inserted = false;
+   }
+  }
+}
