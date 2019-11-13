@@ -102,5 +102,16 @@ remove(data){
       return null;
     }
   }
-
+  if (node.left == null){
+    return node.right;
+  }
+  if (node.right == null) {
+    return node.left; 
+  }
+  var tempNode = node.right;
+  while (tempNode.left !== null){
+    tempNode = node.left;
+  }
+  node.data = tempNode.data;
+  node.right = removeNode(node.right, tempNode.data);
 }
